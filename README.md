@@ -1,4 +1,5 @@
-# tpsafe.sk
+![Safe-teleport-15-07-2024](https://github.com/user-attachments/assets/e252eb70-76dd-47ee-9237-30c5c691022a)
+
 
 This Skript grants players temporary invincibility after teleporting, preventing them from taking or dealing damage for 30 seconds. 
 
