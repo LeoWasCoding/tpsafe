@@ -1,0 +1,26 @@
+variables:
+    {invincible::*} = false
+
+on teleport:
+    set {invincible::%player's uuid%} to true
+    send "&aYou are invincible for 30 seconds!" to player
+    wait 20 seconds
+    send "&cYour invincibility will go off in 10 seconds!" to player
+    wait 5 seconds
+    send "&cYour invincibility will go off in 5 seconds!" to player
+    wait 2 seconds
+    send "&cYour invincibility will go off in 3 seconds!" to player
+    wait 1 second
+    send "&cYour invincibility will go off in 2 seconds!" to player
+    wait 1 second
+    send "&cYour invincibility will go off in 1 second!" to player
+    wait 1 second
+    delete {invincible::%player's uuid%}
+    send "&cYour invincibility has worn off!" to player
+
+on damage of player:
+    if {invincible::%victim's uuid%} is set:
+        cancel event
+        send "&cYou are currently invincible and cannot take damage!" to victim
+        if attacker is a player:
+            send "&cYou cannot attack &7%victim%&c, they are currently invincible!" to attacker
