@@ -10,7 +10,8 @@ This Skript grants players temporary invincibility after teleporting, preventing
 - **Damage Prevention:** Prevents invincible players from taking or dealing damage, with appropriate notifications.
 
 ## Installation
-![Download](https://github.com/LeoWasCoding/tpsafe/releases/tag/v1)
+![![image](https://github.com/user-attachments/assets/63069a37-fa04-4983-8094-b5557a3a3cf0)
+](https://github.com/LeoWasCoding/tpsafe/releases/tag/v1)
 1. Ensure you have the Skript plugin installed on your Minecraft server.
 2. Place `tpsafe.sk` in the `plugins/Skript/scripts` directory.
 3. Reload the script using `/sk reload tpsafe` in-game or through the server console.
