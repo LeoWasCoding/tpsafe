@@ -24,3 +24,9 @@ on damage of player:
         send "&cYou are currently invincible and cannot take damage!" to victim
         if attacker is a player:
             send "&cYou cannot attack &7%victim%&c, they are currently invincible!" to attacker
+
+on damage:
+    if attacker is a player:
+        if {invincible::%attacker's uuid%} is set:
+            cancel event
+            send "&cYou cannot attack other players or entities while you are invincible!" to attacker
